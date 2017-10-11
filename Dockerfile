@@ -15,4 +15,4 @@ RUN chgrp -R 0 /go/bin \
 
 ENTRYPOINT  /entrypoint.sh 
 
-EXPOSE 8080
+EXPOSE 8080 8088 8089
