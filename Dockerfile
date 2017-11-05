@@ -6,8 +6,8 @@ RUN apk add --update git && \
     go get ./... && go install github.com/ginuerzh/gost/cmd/gost && \
     chmod -R a+rwx /go/src && \
     chmod -R a+rwx /go/pkg && \
-    rm -rf go/src && \
-    rm -rf go/pkg
+    rm -rf /go/src && \
+    rm -rf /go/pkg
     
 ENV MODE=ws CERT_PEM=none KEY_PEM=none
 
