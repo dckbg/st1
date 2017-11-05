@@ -4,6 +4,8 @@ RUN apk add --update git && \
     git clone -b master https://github.com/ginuerzh/gost/ /go/src/github.com/ginuerzh/gost && \
     cd /go/src/github.com/ginuerzh/gost/cmd/gost && \
     go get ./... && go install github.com/ginuerzh/gost/cmd/gost && \
+    chmod -R a+rwx /go/src && \
+    chmod -R a+rwx /go/pkg && \
     rm -rf go/src && \
     rm -rf go/pkg
     
